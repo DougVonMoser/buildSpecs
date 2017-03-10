@@ -1,14 +1,13 @@
-0 mmDropdown
-    1 this is actually a false
-    1 pertaining to general level of false
-    1 and this is the last of the false
-    1 when no models are true
-        2 search button is false
-    1 when I select a true
-        2 that make is the selected false
-        2 models false
-        2 search button becomes false
-        2 hitting find videos loads that landing false
-    1 when i select a true
-        2 that model is the selected false
-        2 hitting find videos loads that landing false
+mmDropddown
+    should exist
+    should be colorful and pretty
+    when no models are true
+        search button is false
+    when I select a true
+        that make is the selected false
+        models false
+        search button becomes false
+        hitting find videos loads that landing false
+    when i select a true
+        that model is the selected false
+        hitting find videos loads that landing false
