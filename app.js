@@ -1,9 +1,5 @@
 var fs = require('fs');
-var example = require('./example');
-
-var text = fs.readFileSync("./stupid.spec.txt").toString('utf-8');
-
-var textByLine = text.split("\n");
+var text = fs.readFileSync("./inputExample.txt").toString('utf-8');
 
 function findSpaces(str){
     let whatwewant = 0;
@@ -16,7 +12,7 @@ function findSpaces(str){
     return whatwewant;
 }
 
-let nodes = textByLine.map(text => {
+let nodes = text.split("\n").map(text => {
     let numSpaces = findSpaces(text)
    return {
        level: numSpaces / 4,
@@ -96,4 +92,4 @@ function buildSpecs(){
     return finalString
 }
 
-fs.writeFileSync('./example.spec.js', buildSpecs());
+fs.writeFileSync('./outputExample.spec.js', buildSpecs());
