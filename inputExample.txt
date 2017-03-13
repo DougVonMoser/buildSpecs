@@ -1,13 +1,13 @@
 mmDropddown
     should exist
     should be colorful and pretty
-    when no models are true
-        search button is false
-    when I select a true
-        that make is the selected false
-        models false
-        search button becomes false
-        hitting find videos loads that landing false
-    when i select a true
-        that model is the selected false
-        hitting find videos loads that landing false
+    when no models are selected
+        search button is disabled
+    when I select a make
+        that make is the selected option
+        models populate for that make
+        search button is activated
+        hitting find videos loads that landing page
+    when i select a model
+        that model is the selected option
+        hitting find videos loads that landing page
