@@ -11,11 +11,11 @@ function findSpaces(str){
 
 module.exports = function(text){
     return text.split("\n").map(text => {
-        let numSpaces = findSpaces(text)
+        let numSpaces = findSpaces(text);
         return {
             level: numSpaces / 4,
             text: text.slice(numSpaces),
             describe: true
         }
     });
-}
+};

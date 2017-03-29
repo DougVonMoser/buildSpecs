@@ -6,7 +6,7 @@ module.exports = function(nodes){
         let my = nodes[counter];
         // if the next node's level is the same
         if(counter + 1 === nodes.length){
-            chunk.push(counter)
+            chunk.push(counter);
             nodes.slice(chunk[0], chunk[0] + chunk.length).forEach(node => {node.describe = false});
             break;
         }

@@ -33,4 +33,4 @@ module.exports = function(nodes){
     });
     describeStack.reverse().forEach((node)=>{finalString += describeB(node)});
     return finalString
-}
+};
