@@ -1,5 +1,4 @@
 module.exports = function(nodes){
-
     // all criminals are describes until proven its
     nodes.forEach(node =>{node.describe = true;})
 

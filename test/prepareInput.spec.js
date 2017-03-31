@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const prepareInput = require('../helpers/prepareInput');
+const prepareInput = require('../src/helpers/prepareInput');
 const exampleSpecString = require('../fixtures/exampleSpecString');
 
 describe('prepare input', function(){
@@ -12,8 +12,8 @@ describe('prepare input', function(){
             prepared = prepareInput(exampleSpecString);
         });
 
-        it("each line should have 3 properties", function () {
-            expect(prepared[0]).to.include.keys('describe', 'level', 'text');
+        it("each line should have 2 properties", function () {
+            expect(prepared[0]).to.include.keys('level', 'text');
         });
         describe("level property", function () {
             it("should be a number", function () {
@@ -27,11 +27,6 @@ describe('prepare input', function(){
         describe("text property", function () {
             it("should be a string", function () {
                 expect(prepared[0].text).to.be.a('string');
-            });
-        });
-        describe("describe property", function () {
-            it("should always be true for now goddam it", function () {
-                expect(prepared[0].describe).to.be.a('boolean');
             });
         });
     });
