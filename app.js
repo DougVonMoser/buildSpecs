@@ -1,12 +1,8 @@
-var fs = require('fs');
+const buildSpecs = require('./src');
+const fs = require('fs');
 
-const buildTestString = require('./helpers/buildTestString');
-const rankInput = require('./helpers/rankInput');
-const prepareInput = require('./helpers/prepareInput');
+//soon to be piped into via command line or
+// applied to front end crap
+let txtBuildFile = "./fixtures/inputExample.txt";
 
-var text = fs.readFileSync("./test/fixtures/inputExample.txt").toString('utf-8');
-let nodes = prepareInput(text);
-
-rankInput(nodes);
-
-fs.writeFileSync('./outputExample.spec.js', buildTestString(nodes));
+fs.writeFileSync('outputExample.spec.js', buildSpecs(txtBuildFile));

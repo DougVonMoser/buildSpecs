@@ -14,8 +14,7 @@ module.exports = function(text){
         let numSpaces = findSpaces(text);
         return {
             level: numSpaces / 4,
-            text: text.slice(numSpaces),
-            describe: true
+            text: text.slice(numSpaces)
         }
     });
 };
