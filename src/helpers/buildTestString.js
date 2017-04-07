@@ -15,7 +15,7 @@ module.exports = function(nodes){
     let describeStack = [];
     let finalString = '';
 
-    nodes.forEach((node, idx)=>{
+    nodes.forEach((node)=>{
         if(node.describe){
             if(describeStack.length === 0 || node.level > describeStack[describeStack.length -1].level){
                 describeStack.push(node);

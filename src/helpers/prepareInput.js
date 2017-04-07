@@ -10,7 +10,9 @@ function findSpaces(str){
 }
 
 module.exports = function(text){
-    return text.split("\n").map(text => {
+    return text.split("\n")
+        .filter(elem => elem.length > 2)
+        .map(text => {
         let numSpaces = findSpaces(text);
         return {
             level: numSpaces / 4,
