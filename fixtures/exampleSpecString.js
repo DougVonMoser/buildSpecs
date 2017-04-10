@@ -1,4 +1,6 @@
-module.exports = `mmDropddown
+module.exports =
+`/*bS
+mmDropddown
     should exist
     should be colorful and pretty
     when no models are selected
@@ -10,4 +12,5 @@ module.exports = `mmDropddown
         hitting find videos loads that landing page
     when i select a model
         that model is the selected option
-        hitting find videos loads that landing page`;
+        hitting find videos loads that landing page
+bS*/`;
